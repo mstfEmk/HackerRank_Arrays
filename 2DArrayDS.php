@@ -1,12 +1,11 @@
 <?php
 // Complete the hourglassSum function below.
 function hourglassSum($arr) {
-    $sum = PHP_INT_MIN;
+	$sum = -1000;
 	$max = $sum;
-	echo $sum;
+
     for ($i = 1; $i < count($arr) - 1; $i++) {
         for ($j = 1; $j < count($arr) - 1; $j++) {
-
             $upperLine = $arr[$i-1][$j-1] + $arr[$i-1][$j] + $arr[$i-1][$j+1];
             $currentLine = $arr[$i][$j];
             $bottomLine = $arr[$i+1][$j-1] + $arr[$i+1][$j] + $arr[$i+1][$j+1];
@@ -16,10 +15,9 @@ function hourglassSum($arr) {
 				$max = $sum;
 			}
 		}
-
     }
-    
-    return $max;
+  
+	return $max;
 }
 
 /*
