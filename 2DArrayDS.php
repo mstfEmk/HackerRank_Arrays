@@ -12,7 +12,7 @@ function hourglassSum($arr) {
 			$sum = $upperLine + $currentLine + $bottomLine;
 
 			if ($sum > $max) {
-				$max = $sum;
+        $max = $sum;
 			}
 		}
 	}
